@@ -1,1 +1,1 @@
-John is very much unique in his own way.
+I want to sleep, perchance to dream.
