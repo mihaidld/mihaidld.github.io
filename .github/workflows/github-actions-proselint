@@ -1,0 +1,23 @@
+name: GitHub Actions check prose on all the .md files in the repository
+run-name: ${{ github.actor }} is checking typos within .md files via proselint and GitHub Actions 🚀
+on:
+  pull_request:
+    branches:
+      - main
+permissions: {}
+jobs:
+  proselint:
+    name: Proselint
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Check out repository code
+        uses: actions/checkout@v5
+      - name: Install proselint via pip
+        run: pip install proselint
+      - name: Check prose on .md files in the repository
+        run: |
+          proselint check ${{ github.workspace }}/*.md
+      - run: echo "🍏 This job's status is ${{ job.status }}."
