@@ -1,2 +1,2 @@
 # mihaidld.github.io
-Test content
+Test GitHub actions using Shellcheck scripts
