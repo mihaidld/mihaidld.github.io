@@ -1,2 +1,2 @@
-# mihaidld.github.io
-Test GitHub actions using Shellcheck scripts
+# Test GitHub Pages and GitHub Actions
+Test GitHub actions using Shellcheck on shell scripts and Proselint on .md files
