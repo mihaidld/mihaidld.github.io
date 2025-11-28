@@ -1,1 +1,1 @@
-I want to sleep, perchance to dream.
+I want to sleep, perchance to dream another time.
